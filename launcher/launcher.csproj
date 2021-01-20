@@ -236,12 +236,6 @@
   <ItemGroup>
     <Resource Include="unranked.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="TX_CompetitiveTier_Large_16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="TX_CompetitiveTier_Large_0.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
