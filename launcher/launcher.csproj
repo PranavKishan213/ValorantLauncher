@@ -182,13 +182,10 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Resource Include="Valorant Font.ttf" />
+    <Resource Include="assets\Valorant Font.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="valorant.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="assets\valorant.png" />
@@ -197,10 +194,7 @@
     <Resource Include="assets\rib.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="rib.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="margin.png" />
+    <Resource Include="assets\margin.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="assets\TX_CompetitiveTier_Large_14.png" />
@@ -234,13 +228,16 @@
     <Resource Include="assets\TX_CompetitiveTier_Large_0.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="assets\Sage_artwork.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\outline.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="TX_CompetitiveTier_Large_0.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Sage_artwork.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="outline.png" />
+    <Resource Include="TX_CompetitiveTier_Large_16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
