@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="AppMain" Height="540" Width="910" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanMinimize" Icon="valorant.png" Visibility="Visible" 
+        Title="AppMain" Height="540" Width="910" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanMinimize" Icon="/assets/valorant.png" Visibility="Visible" 
         Background="Transparent" MouseLeftButtonDown="Window_MouseDown">
     <Grid>
 
@@ -16,7 +16,7 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        <Image Source="margin.png" Margin="0,0,585,0"/>
+        <Image Source="/assets/margin.png" Margin="0,0,585,0"/>
         <StackPanel Margin="0,0,750,0">
 
             <Button x:Name="Play" Content="Play" Style="{DynamicResource MainButtonStyle}" Height="35" FontSize="22" Margin="4.5" Click="StartGame"/>

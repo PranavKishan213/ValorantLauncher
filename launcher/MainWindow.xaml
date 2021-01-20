@@ -25,7 +25,7 @@
         <Button Content="Sign In" HorizontalAlignment="Left" Margin="58,438,0,0" VerticalAlignment="Top" Width="207" Height="38" FontFamily="Corbel" Click="SignIn" Style="{DynamicResource MainButtonStyle}"/>
         <TextBox Foreground="White" TextWrapping="Wrap" Text="VALORANT LAUNCHER by" Margin="159,102,10,372" Background="Transparent" FontFamily="Corbel" FontSize="15" IsReadOnly="True" BorderThickness="0"/>
         <TextBox Foreground="White" TextWrapping="Wrap" Text="Sai Pranav Kishan" Margin="158,114,11,360" Background="Transparent" FontFamily="Corbel" FontSize="15" IsReadOnly="True" BorderThickness="0"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="58,78,0,0" VerticalAlignment="Top" Width="100" Source="valorant.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="58,78,0,0" VerticalAlignment="Top" Width="100" Source="/assets/valorant.png"/>
         <TextBlock TextWrapping="Wrap" Margin="58,180,151,293" FontSize="16" Text="Username" Foreground="White"/>
         <TextBlock TextWrapping="Wrap" Margin="58,247,151,226" FontSize="16" Text="Password" Foreground="White"/>
         <TextBlock TextWrapping="Wrap" Margin="58,371,151,102" FontSize="16" Text="Path to Folder" Foreground="White"/>
