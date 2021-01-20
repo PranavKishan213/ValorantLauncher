@@ -234,7 +234,7 @@
     <Resource Include="assets\outline.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="unranked.png" />
+    <Resource Include="assets\unranked.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
