@@ -18,4 +18,6 @@ This is a very minor thing that I'll be able to solve by the next release. Now, 
 
 --> The Username and the Password boxes are currently non-functional. They will soon see purpose when I automate the login onto the offical Riot launcher. Until then, you can type whatever you want, it will not affect functioning.
 
+--> Once you enter the path, it kinda gets stuck. The best way to solve this is to just delete the txtjson.json in D drive. I'll add a Reset button in the next release.
+
 Thank you for downloading, and I do hope you enjoy!
