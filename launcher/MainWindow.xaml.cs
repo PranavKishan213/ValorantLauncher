@@ -24,7 +24,6 @@ namespace launcher
                 username.Text = dm.usernamecs;
                 password.Password = dm.passwordcs;
                 path.Text = dm.pathcs;
-                region.Text = dm.regioncs;
                 detect = true;
             }
         }
@@ -44,9 +43,9 @@ namespace launcher
                 dn.usernamecs = username.Text;
                 dn.passwordcs = password.Password.ToString();
                 dn.pathcs = path.Text;
-                dn.regioncs = region.Text;
                 this.Close();
                 ap.DataReceive(dn.usernamecs, dn.passwordcs, dn.pathcs, dn.regioncs);
+
             }
             else
             {
@@ -54,7 +53,6 @@ namespace launcher
                 dn.usernamecs = username.Text;
                 dn.passwordcs = password.Password.ToString();
                 dn.pathcs = path.Text + "\\VALORANT.lnk";
-                dn.regioncs = region.Text;
                 AppMain ap = new AppMain();
                 this.Close();
                 ap.DataReceive(dn.usernamecs, dn.passwordcs, dn.pathcs, dn.regioncs);

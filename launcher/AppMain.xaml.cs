@@ -51,28 +51,28 @@ namespace launcher
         }
         private void News_Loaded(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://runitback.gg/");
+            Browser.Load("https://runitback.gg/");
 
         }
 
         private void Leaderboard(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://blitz.gg/valorant/leaderboards/general");
+            Browser.Load("https://blitz.gg/valorant/leaderboards/general");
         }
 
         private void guides(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://blitz.gg/valorant/guides");
+            Browser.Load("https://blitz.gg/valorant/guides");
         }
 
         private void valtrack(object sender, RoutedEventArgs e)
         {
-            mainViewsys.Source = new Uri("/tracker.xaml", UriKind.Relative);
+            Browser.Load("https://blitz.gg/valorant");        
         }
 
         private void abt(object sender, RoutedEventArgs e)
         {
-            mainViewsys.Source = new Uri("/about.xaml", UriKind.Relative);
+            Browser.Load("https://about.bss.design/");
         }
     }
 }

@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Login" Height="500" Width="350" Icon="assets/valorant.png" ResizeMode="NoResize" WindowStyle="None" Visibility="Visible"  WindowStartupLocation="CenterScreen" Background="Transparent" AllowsTransparency="True"
         MouseLeftButtonDown="Window_MouseDown">
-    
-    
+
+
     <Grid>
         <Border CornerRadius="5" BorderBrush="#FFFFFF" BorderThickness="1.5">
             <Border.Background>
@@ -20,16 +20,14 @@
         </Border>
         <TextBox x:Name="username" Foreground="White" HorizontalAlignment="Left" Height="35" Margin="58,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" Background="Transparent" BorderThickness="2" BorderBrush="White"  FontSize="24" FontFamily="Corbel" CaretBrush="DeepSkyBlue"/>
         <PasswordBox x:Name="password" Foreground="White" HorizontalAlignment="Left" Height="35" Margin="58,274,0,0" VerticalAlignment="Top" Width="217" FontSize="24" Background="Transparent" FontFamily="Corbel" BorderThickness="2" BorderBrush="White" CaretBrush="DeepSkyBlue"/>
-        <TextBox x:Name="path" Foreground="White" HorizontalAlignment="Left" Height="35" Margin="58,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" Background="Transparent" FontSize="24" FontFamily="Corbel" BorderThickness="2" BorderBrush="White" CaretBrush="DeepSkyBlue"/>
-        <TextBox x:Name="region" Foreground="White" HorizontalAlignment="Left" Height="35" Margin="58,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" Background="Transparent" FontSize="24" FontFamily="Corbel" BorderThickness="2" BorderBrush="White" CaretBrush="DeepSkyBlue"/>
-        <Button Content="Sign In" HorizontalAlignment="Left" Margin="58,438,0,0" VerticalAlignment="Top" Width="207" Height="38" FontFamily="Corbel" Click="SignIn" Style="{DynamicResource MainButtonStyle}"/>
+        <TextBox x:Name="path" Foreground="White" HorizontalAlignment="Left" Height="35" Margin="58,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" Background="Transparent" FontSize="24" FontFamily="Corbel" BorderThickness="2" BorderBrush="White" CaretBrush="DeepSkyBlue"/>
+        <Button Content="Sign In" HorizontalAlignment="Left" Margin="58,394,0,0" VerticalAlignment="Top" Width="207" Height="38" FontFamily="Corbel" Click="SignIn" Style="{DynamicResource MainButtonStyle}"/>
         <TextBox Foreground="White" TextWrapping="Wrap" Text="VALORANT LAUNCHER by" Margin="159,102,10,372" Background="Transparent" FontFamily="Corbel" FontSize="15" IsReadOnly="True" BorderThickness="0"/>
         <TextBox Foreground="White" TextWrapping="Wrap" Text="Sai Pranav Kishan" Margin="158,114,11,360" Background="Transparent" FontFamily="Corbel" FontSize="15" IsReadOnly="True" BorderThickness="0"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="58,78,0,0" VerticalAlignment="Top" Width="100" Source="/assets/valorant.png"/>
         <TextBlock TextWrapping="Wrap" Margin="58,180,151,293" FontSize="16" Text="Username" Foreground="White"/>
         <TextBlock TextWrapping="Wrap" Margin="58,247,151,226" FontSize="16" Text="Password" Foreground="White"/>
-        <TextBlock TextWrapping="Wrap" Margin="58,371,151,102" FontSize="16" Text="Path to Folder" Foreground="White"/>
-        <TextBlock TextWrapping="Wrap" Margin="58,309,151,164" FontSize="16" Text="Region" Foreground="White"/>
+        <TextBlock TextWrapping="Wrap" Margin="58,314,151,159" FontSize="16" Text="Path to Folder" Foreground="White"/>
 
 
 

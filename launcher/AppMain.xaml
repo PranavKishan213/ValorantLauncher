@@ -3,6 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        xmlns:cefSharpCore="clr-namespace:CefSharp;assembly=CefSharp.Core"
         mc:Ignorable="d"
         Title="AppMain" Height="540" Width="910" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanMinimize" Icon="/assets/valorant.png" Visibility="Visible" 
         Background="Transparent" MouseLeftButtonDown="Window_MouseDown">
@@ -29,7 +31,13 @@
                 <TextBox x:Name="Info" Text="Built with love by Sai Pranav &#xA;" Margin="1" BorderThickness="0" Height="33" Background="Transparent" Foreground="White" IsReadOnly="True"/>
             </StackPanel>
         </StackPanel>
-        <Frame x:Name="mainViewsys" Source="/tracker.xaml" Margin="165,0,0,0" NavigationUIVisibility="Hidden"/>
+        <Grid Margin="165,0,0,0">
+            <wpf:ChromiumWebBrowser x:Name="Browser" Address="https://runitback.gg/">
+                <wpf:ChromiumWebBrowser.BrowserSettings>
+                    <cefSharpCore:BrowserSettings DefaultEncoding="UTF-8"/>
+                </wpf:ChromiumWebBrowser.BrowserSettings>
+            </wpf:ChromiumWebBrowser>
+        </Grid>
 
     </Grid>
 </Window>
