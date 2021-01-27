@@ -22,26 +22,24 @@ namespace launcher
 {
     public partial class AppMain : Window
     {
-        string mainUser, mainPass, mainPath, mainRegion;
+        string mainUser, mainPass;
         public AppMain()
         {
             InitializeComponent();
         }
-        public void DataReceive(string user, string pass, string path, string region)
+        public void DataReceive(string user, string pass)
         {
             mainUser = user;
             mainPass = pass;
-            mainPath = path;
-            mainRegion = region;
-            Console.WriteLine("The username, password and path entered is: " + mainUser + ", " + mainPass + ", " + mainPath + " and " + mainRegion);
+            Console.WriteLine("The username, password and path entered is: " + mainUser + ", " + mainPass);
         }
 
         public void StartGame(object sender, RoutedEventArgs e)
         {
             Process proc = new Process();
-            proc.StartInfo.FileName = mainPath;
+            proc.StartInfo.FileName = "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Riot Games\\VALORANT.lnk";
             proc.Start();
-
+            this.WindowState = WindowState.Minimized;
 
         }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
@@ -73,6 +71,11 @@ namespace launcher
         private void abt(object sender, RoutedEventArgs e)
         {
             Browser.Load("https://about.bss.design/");
+        }
+
+        private void ex(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -23,7 +23,7 @@ namespace launcher
                 datanum dm = (datanum)jsSer.Deserialize(file, typeof(datanum));
                 username.Text = dm.usernamecs;
                 password.Password = dm.passwordcs;
-                path.Text = dm.pathcs;
+
                 detect = true;
             }
         }
@@ -42,9 +42,8 @@ namespace launcher
                 AppMain ap = new AppMain();
                 dn.usernamecs = username.Text;
                 dn.passwordcs = password.Password.ToString();
-                dn.pathcs = path.Text;
                 this.Close();
-                ap.DataReceive(dn.usernamecs, dn.passwordcs, dn.pathcs, dn.regioncs);
+                ap.DataReceive(dn.usernamecs, dn.passwordcs);
 
             }
             else
@@ -52,10 +51,9 @@ namespace launcher
                 datanum dn = new datanum();
                 dn.usernamecs = username.Text;
                 dn.passwordcs = password.Password.ToString();
-                dn.pathcs = path.Text + "\\VALORANT.lnk";
                 AppMain ap = new AppMain();
                 this.Close();
-                ap.DataReceive(dn.usernamecs, dn.passwordcs, dn.pathcs, dn.regioncs);
+                ap.DataReceive(dn.usernamecs, dn.passwordcs);
                 string output = JsonConvert.SerializeObject(dn, Formatting.Indented);
                 Console.WriteLine(output);
                 System.IO.File.WriteAllText(filem, output);
@@ -63,7 +61,13 @@ namespace launcher
 
 
         }
+        private void ReSet(object sender, RoutedEventArgs e)
+        {
+            System.IO.File.Delete("D:\\txtjson.json");
+        }
     }
+
+    
 
     public class datanum
     {

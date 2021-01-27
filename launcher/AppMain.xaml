@@ -6,20 +6,17 @@
         xmlns:wpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:cefSharpCore="clr-namespace:CefSharp;assembly=CefSharp.Core"
         mc:Ignorable="d"
-        Title="AppMain" Height="540" Width="910" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanMinimize" Icon="/assets/valorant.png" Visibility="Visible" 
+        Title="AppMain" Height="750" Width="1300" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanMinimize" Icon="/assets/valorant.png" Visibility="Visible" 
         Background="Transparent" MouseLeftButtonDown="Window_MouseDown">
     <Grid>
 
         <Border BorderThickness="1" CornerRadius="5" BorderBrush="White">
             <Border.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="BlueViolet"/>
-                    <GradientStop Color="#190727" Offset="1"/>
-                </LinearGradientBrush>
+                <SolidColorBrush Color="#190727"/>
             </Border.Background>
         </Border>
-        <Image Source="/assets/margin.png" Margin="0,0,585,0"/>
-        <StackPanel Margin="0,0,750,0">
+        <Image Source="/assets/margin.png" Margin="0,0,924,0"/>
+        <StackPanel Margin="0,0,1113,0">
 
             <Button x:Name="Play" Content="Play" Style="{DynamicResource MainButtonStyle}" Height="35" FontSize="22" Margin="4.5" Click="StartGame"/>
             <Button x:Name="News" Content="News" Style="{DynamicResource MainButtonStyle}" Height="35" FontSize="22" Margin="4.5" Click="News_Loaded"/>
@@ -27,11 +24,12 @@
             <Button x:Name="Leaderboards" Content="Leaderboards" Style="{DynamicResource MainButtonStyle}" Height="35" FontSize="22" Margin="4.5" Click="Leaderboard"/>
             <Button x:Name="guide" Content="Guides" Style="{DynamicResource MainButtonStyle}" Height="35" FontSize="22" Margin="4.5" Click="guides"/>
             <Button x:Name="About" Content="About" Style="{DynamicResource MainButtonStyle}" Height="35" FontSize="22" Margin="4.5" Click="abt"/>
-            <StackPanel Margin="0, 250, 0, 0">
+            <Button x:Name="exit" Content="Exit" Style="{DynamicResource MainButtonStyle}" Height="35" FontSize="22" Margin="4.5" Click="ex"/>
+            <StackPanel Margin="0,420,10,0">
                 <TextBox x:Name="Info" Text="Built with love by Sai Pranav &#xA;" Margin="1" BorderThickness="0" Height="33" Background="Transparent" Foreground="White" IsReadOnly="True"/>
             </StackPanel>
         </StackPanel>
-        <Grid Margin="165,0,0,0">
+        <Grid Margin="192,0,0,0">
             <wpf:ChromiumWebBrowser x:Name="Browser" Address="https://runitback.gg/">
                 <wpf:ChromiumWebBrowser.BrowserSettings>
                     <cefSharpCore:BrowserSettings DefaultEncoding="UTF-8"/>
