@@ -77,5 +77,12 @@ namespace launcher
         {
             this.Close();
         }
+
+        private void minimize(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        
     }
 }
